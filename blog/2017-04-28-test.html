@@ -46,26 +46,26 @@
 
 <p>This is a test blog<br />
 I have some code lines today:</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">plt.clf()
-<span class="co"># measurements = [ u'precision', u'recall', u'F1', u'MCC', u'RMSE', u'ROC_CAU']</span>
-sns.set_style(<span class="st">'ticks'</span>)
-
-<span class="co"># for mea in measurements:</span>
-<span class="co">#     cor = color.pop()</span>
-<span class="co"># #     svm_accuracy_importance[mea].plot(label='SVM '+ mea, c=cor)</span>
-<span class="co"># #     svm_accuracy['MCC'].plot(label='SVM MCC')</span>
-<span class="co">#     lr_accuracy_importance[mea].plot(label= mea,c=cor)</span>
-<span class="co">#     logistic_accuracy['MCC'].plot(label='LR MCC')</span>
-<span class="co"># svm_accuracy['RMSE'].plot(label='RMSE')</span>
-lr_accuracy_importance[measurements_2].plot(title<span class="op">=</span><span class="st">&quot;Logistic Regression&quot;</span>,grid<span class="op">=</span><span class="va">True</span>,
-style<span class="op">=</span>styles[<span class="bu">len</span>(measurements)])
-plt.grid(linestyle<span class="op">=</span><span class="st">':'</span>,c<span class="op">=</span><span class="st">'black'</span>)
-plt.legend(loc<span class="op">=</span><span class="st">'lower right'</span>, fancybox<span class="op">=</span><span class="va">False</span>)
-<span class="co"># plt.legend(loc=4)</span>
-plt.ylim([<span class="dv">0</span>,<span class="fl">0.1</span>])
-plt.gcf().set_size_inches(fig_width,fig_height)
-plt.savefig(<span class="st">'lr_against_importance_weight_b.pdf'</span>,bbox_inches<span class="op">=</span><span class="st">'tight'</span>)
-<span class="co">#plt.show()</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>plt.clf()</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># measurements = [ u'precision', u'recall', u'F1', u'MCC', u'RMSE', u'ROC_CAU']</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">'ticks'</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># for mea in measurements:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     cor = color.pop()</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># #     svm_accuracy_importance[mea].plot(label='SVM '+ mea, c=cor)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># #     svm_accuracy['MCC'].plot(label='SVM MCC')</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#     lr_accuracy_importance[mea].plot(label= mea,c=cor)</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#     logistic_accuracy['MCC'].plot(label='LR MCC')</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># svm_accuracy['RMSE'].plot(label='RMSE')</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>lr_accuracy_importance[measurements_2].plot(title<span class="op">=</span><span class="st">&quot;Logistic Regression&quot;</span>,grid<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>style<span class="op">=</span>styles[<span class="bu">len</span>(measurements)])</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>plt.grid(linestyle<span class="op">=</span><span class="st">':'</span>,c<span class="op">=</span><span class="st">'black'</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">'lower right'</span>, fancybox<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># plt.legend(loc=4)</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="dv">0</span>,<span class="fl">0.1</span>])</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>plt.gcf().set_size_inches(fig_width,fig_height)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'lr_against_importance_weight_b.pdf'</span>,bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">#plt.show()</span></span></code></pre></div>
 
 <!--<div id="disqus_thread"></div>-->
 <!--<script>-->
@@ -94,7 +94,7 @@ plt.savefig(<span class="st">'lr_against_importance_weight_b.pdf'</span>,bbox_in
 
 <div id="footer">
     <div id="disclaimer">
-        &copy; 2017-<script>document.write(new Date().getFullYear())</script> Vandang Tran. This web site is built with <a href="http://jaspervdj.be/hakyll/">Hakyll</a>. Last updated 22 Aug 2020.
+        &copy; 2017-<script>document.write(new Date().getFullYear())</script> Vandang Tran. This web site is built with <a href="http://jaspervdj.be/hakyll/">Hakyll</a>. Last updated  7 Oct 2021.
     </div>
 </div>
 <script>
